@@ -26,10 +26,10 @@
       SELECT LAST_INSERT_ID()
     </selectKey>
     
-    insert into user_info (username, net_name, job,
+    insert into user_info (id,username, net_name, job,
     family_native_place, mobile, email
     )
-    values (#{username,jdbcType=VARCHAR}, #{netName,jdbcType=VARCHAR}, #{job,jdbcType=VARCHAR},
+    values (#{id},#{username,jdbcType=VARCHAR}, #{netName,jdbcType=VARCHAR}, #{job,jdbcType=VARCHAR},
     #{familyNativePlace,jdbcType=VARCHAR}, #{mobile,jdbcType=VARCHAR}, #{email,jdbcType=VARCHAR}
     )
   </insert>

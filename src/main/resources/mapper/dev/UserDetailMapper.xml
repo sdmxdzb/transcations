@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.lanwon.mapper.dev.UserDetailMapper">
     <resultMap id="BaseResultMap" type="com.lanwon.entity.dev.UserDetail">
-        <id column="id" property="id" jdbcType="BIGINT"/>
+        <id column="id" property="id" jdbcType="VARCHAR"/>
         <result column="name" property="name" jdbcType="VARCHAR"/>
         <result column="qq" property="qq" jdbcType="VARCHAR"/>
     </resultMap>
@@ -24,7 +24,7 @@
 		      SELECT LAST_INSERT_ID()
 		    </selectKey>
 
-			INSERT INTO  user_info
+			INSERT INTO  user_detail
 			(id,name,qq)
 			VALUES
 			(#{id},#{name},#{qq})
