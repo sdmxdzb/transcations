@@ -3,7 +3,7 @@ package com.lanwon.entity.dev;
 
 public class UserDetail {
    
-    private Long id;
+    private String id;
 
     private String name;
 
@@ -12,14 +12,14 @@ public class UserDetail {
     /**
      * @return id
      */
-    public Long getId() {
+    public String getId() {
         return id;
     }
 
     /**
      * @param id
      */
-    public void setId(Long id) {
+    public void setId(String id) {
         this.id = id;
     }
 

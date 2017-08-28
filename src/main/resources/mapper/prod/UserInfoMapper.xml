@@ -22,7 +22,7 @@
   </delete>
   <insert id="insert" parameterType="com.lanwon.entity.prod.UserInfo">
    
-    <selectKey resultType="java.lang.String" keyProperty="id" order="AFTER">
+    <selectKey resultType="java.lang.String" keyProperty="id" order="BEFORE">
       SELECT LAST_INSERT_ID()
     </selectKey>
     

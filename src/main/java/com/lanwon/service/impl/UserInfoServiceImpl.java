@@ -45,7 +45,7 @@ public class UserInfoServiceImpl implements UserInfoService {
 		int b=userInfoMapper.update(info);
 			if(b>0){
 				UserDetail detail = new UserDetail();
-				detail.setId(1L);
+				detail.setId("1");
 				detail.setName(name2);
 				c=detailServiceImpl.update(detail);
 			}
