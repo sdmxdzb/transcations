@@ -53,11 +53,10 @@ public class UserInfoServiceImpl implements UserInfoService {
 		return c;
 	}
 
-	/* (non-Javadoc)
-	 * @see com.lanwon.service.UserInfoService#insert(com.lanwon.entity.prod.UserInfo)
-	 */
+    @Transactional(value="prodTransactionManager")
 	@Override
-	public int insert(UserInfo userInfo) {
-		return userInfoMapper.insert(userInfo);
+	public int insert(UserInfo userInfo) throws Exception {
+    	int a = userInfoMapper.insert(userInfo);
+    	throw new RuntimeException("插入失败");
 	}
 }
