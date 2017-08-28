@@ -52,4 +52,12 @@ public class UserInfoServiceImpl implements UserInfoService {
     	
 		return c;
 	}
+
+	/* (non-Javadoc)
+	 * @see com.lanwon.service.UserInfoService#insert(com.lanwon.entity.prod.UserInfo)
+	 */
+	@Override
+	public int insert(UserInfo userInfo) {
+		return userInfoMapper.insert(userInfo);
+	}
 }

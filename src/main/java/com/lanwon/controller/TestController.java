@@ -50,5 +50,25 @@ public class TestController {
         System.out.println("查询第二个数据源");
         return userInfoService.update("张三丰235","张无忌855855588558555555555555555555")+"";
     }
+    
+    
+    @PostMapping(value = "/insertInfo")
+    public String  insertInfo() {
+        System.out.println("查询第二个数据源");
+        UserInfo userInfo=new UserInfo();
+        int a =userInfoService.insert(userInfo);
+        return a+"第一个数据源插入成功";
+    }
+    
+    @PostMapping(value = "/insertDeatil")
+    public String  insertDeatil() {
+    	
+    	UserDetail userDetail =new UserDetail();
+        System.out.println("查询第二个数据源");
+        int a = userDetailService.insert(userDetail);
+        return a+"第二个数据源插入成功" ;
+    }
+    
+    
 
 }

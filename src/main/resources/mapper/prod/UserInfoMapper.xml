@@ -25,6 +25,7 @@
     <selectKey resultType="java.lang.String" keyProperty="id" order="AFTER">
       SELECT LAST_INSERT_ID()
     </selectKey>
+    
     insert into user_info (username, net_name, job,
     family_native_place, mobile, email
     )

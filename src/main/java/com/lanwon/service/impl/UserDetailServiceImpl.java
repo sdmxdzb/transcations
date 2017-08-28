@@ -38,4 +38,13 @@ public class UserDetailServiceImpl implements UserDetailService {
 		int b=userDetailMapper.update(userDetail);
 		return b;
 	}
+
+
+	/* (non-Javadoc)
+	 * @see com.lanwon.service.UserDetailService#insert(com.lanwon.entity.dev.UserDetail)
+	 */
+	@Override
+	public int insert(UserDetail userDetail) {
+		return userDetailMapper.insert(userDetail);
+	}
 }

@@ -45,4 +45,5 @@ public interface UserInfoMapper {
      * @mbggenerated Fri May 27 01:50:31 CST 2016
      */
     int update(UserInfo record);
+    
 }

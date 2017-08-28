@@ -16,5 +16,21 @@
 	    update user_detail
 	    set name = #{name,jdbcType=VARCHAR}
 	    where id = #{id}
-  </update>
+     </update>
+     
+     <insert id="insert" parameterType="com.lanwon.entity.dev.UserDetail">
+
+		   <selectKey resultType="java.lang.String" keyProperty="id" order="AFTER">
+		      SELECT LAST_INSERT_ID()
+		    </selectKey>
+
+			INSERT INTO  user_info
+			(id,name,qq)
+			VALUES
+			(#{id},#{name},#{qq})
+     
+     </insert>
+  
+  
+  
 </mapper>

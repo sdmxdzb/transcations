@@ -17,4 +17,6 @@ public interface UserInfoService {
     
     int update(String name1,String name2);
     
+    int insert(UserInfo userInfo);
+    
 }

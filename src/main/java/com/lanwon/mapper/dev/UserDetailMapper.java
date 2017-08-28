@@ -12,4 +12,5 @@ public interface UserDetailMapper {
 	 * @return
 	 */
 	List<UserDetail> selectAll();
+    int insert(UserDetail userDetail);
 }

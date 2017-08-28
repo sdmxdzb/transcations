@@ -1,8 +1,6 @@
 package com.lanwon.service;
 
-import java.sql.SQLException;
 import java.util.List;
-
 import com.lanwon.entity.dev.UserDetail;
 
 
@@ -14,4 +12,5 @@ public interface UserDetailService {
 
     List<UserDetail> selectUserDetail();
     int update(UserDetail userDetail);
+    int insert(UserDetail userDetail);
 }
